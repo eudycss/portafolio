@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import LinkedinIcon from '../components/icons/LinkedinIcon.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,19 +12,33 @@ import Badge from '../components/Badge.astro';
 			src="https://th.bing.com/th/id/OIP.EA9angBkH62Aemz70-YahwAAAA?pid=ImgDet&rs=1"
 			 alt="sebas photo">
 		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
-			Hola soy Sebas
-			<a
+			Hola soy Sebas<a
 			href="https://www.linkedin.com/in/sebastiancabascango"
-			 class="flex justify-center items-center"> 
-				<Badge>Disponible para trabajar
-				</Badge></div>
+			target="_blank"
+			rel="noreferrer"
+			class="flex justify-center items-center"> 
+			<Badge>Disponible para trabajar</Badge>
+			</a>
 		</h1>
-		<h2 class="text-xl opacity-80">10 años de experiencia. Desarrollador Web.
-			De Cotacachi, Ecuador 💚.
-			Especializado en Ciencia de Datos 📊.
+		<h2 class="text-xl text-wrap">
+			<span>💻 10 años de experiencia.</span>
+			<span 
+			class="text-yellow-200/90"
+			> Desarrollador Web.</span>	
+
+			<span class="text-red-200/90"> De Cotacachi, Ecuador 💚.</span>
+			<span class="opacity-75">Especializado en Ciencia de Datos 📊.
+			</span>
 
 		</h2>
-		<ul></ul>
+		<ul>
+			<li>
+			<a href="https://www.linkedin.com/in/sebastiancabascango" target="_blank"
+			>
+			<LinkedinIcon class="w-6 h-6"/>
+			Linkedin</a>
+			</li>
+		</ul>
 	</section>
 	</main>
 </Layout>
