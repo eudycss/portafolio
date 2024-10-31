@@ -1,0 +1,36 @@
+
+---
+import { date } from "astro:schema"
+import ExperienceItem  from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: "2022-02-01",
+        title: "Application UI code in Tailwind CSS",
+        description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+        link:"#"
+    },
+    {
+        date: "2021-10-01",
+        title: "Marketing UI design in Figma",
+        description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
+        link:"#",
+    },
+    {
+        date: "2021-08-01",
+        title: "Design System in Figma",
+        description: "Get started with dozens of web components and interactive prototypes for Qwik, React, Vue, Angular, and more.",
+        link:"#",
+    },
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map((experiencie) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experiencie} />
+
+            </li>
+            ))
+    }
+</ol>
