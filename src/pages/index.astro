@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
 import LinkedinIcon from '../components/icons/LinkedinIcon.astro';
+import SocialPill from '../components/icons/SocialPill.astro';
+import GithubIcon from '../components/icons/Github.astro';
+import MailIcon from '../components/icons/Mail.astro';
 ---
 
 <Layout title="Bastian's Blog">
@@ -31,14 +34,23 @@ import LinkedinIcon from '../components/icons/LinkedinIcon.astro';
 			</span>
 
 		</h2>
-		<ul>
-			<li>
-			<a href="https://www.linkedin.com/in/sebastiancabascango" target="_blank"
-			>
-			<LinkedinIcon class="w-6 h-6"/>
-			Linkedin</a>
-			</li>
-		</ul>
+		<nav class="flex gap-x-4 mt-8">
+			<SocialPill href="https://www.linkedin.com/in/sebastiancabascango" target="_blank">
+				<LinkedinIcon class="size-6"/>
+				Linkedin
+			</SocialPill>
+			<SocialPill href="https://www.linkedin.com/in/sebastiancabascango" target="_blank">
+				<GithubIcon class="size-6"/>
+				Github
+			</SocialPill>
+			<SocialPill href="https://www.linkedin.com/in/sebastiancabascango" target="_blank">
+				<MailIcon class="size-6"/>
+				escabascango@gmail.com
+			</SocialPill>
+		</nav>
+				
+			
+		
 	</section>
 	</main>
 </Layout>
